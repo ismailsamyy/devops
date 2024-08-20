@@ -2,11 +2,11 @@
 - name: Deploy Docker files and compose up containers
   hosts: all
   tasks:
-    # - name: Copy folder to the managed node
-    #   copy:
-    #     src: /root/devops/interns  # Relative path to the folder in the same directory as the playbook
-    #     dest: /root/  # Destination path on the managed node
-    #     mode: '0755'
+    - name: Copy folder to the managed node
+      copy:
+        src: /root/devops/interns  # Relative path to the folder in the same directory as the playbook
+        dest: /root/  # Destination path on the managed node
+        mode: '0755'
 
 
     - name: Ensure Docker Compose is installed

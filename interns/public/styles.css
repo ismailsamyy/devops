@@ -1,0 +1,330 @@
+/***************** 
+Google font family import link 
+*****************/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+/***************** 
+body style start
+*****************/
+body {
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 10px;
+}
+/***************** 
+body style end
+*****************/
+/*****************
+ header style  start
+*****************/
+header {
+  background-color: rgba(0, 0, 139, 0.863);
+  padding-bottom: 50px;
+  margin-bottom: 50px;
+  overflow: hidden;
+}
+nav {
+  padding-top: 25px;
+}
+nav > section > .button {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.button span {
+  text-decoration: none;
+  color: #fff;
+}
+.button a {
+  text-decoration: none;
+  color: #fff;
+  padding-left: 18px;
+  font-size: 14px;
+  align-items: center;
+}
+/******************
+copa america is a header div 
+******************/
+.copa-america {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  margin-top: 40px;
+}
+.copa-america > div {
+  width: 50%;
+}
+.conmebol {
+  padding-left: 33%;
+  font-size: 40px;
+  padding-top: 5%;
+  color: #fff;
+}
+.conmebol h1 {
+  margin-bottom: 0;
+  display: inline;
+}
+.conmebol a,
+.login {
+  font-size: 16px;
+  color: #fff;
+  background-color: rgb(211, 9, 93);
+  padding: 10px 10px 5px 5px;
+  text-decoration: none;
+  border-radius: 10px;
+}
+/*****************
+head player img is a header div  *****************/
+.head-player-img img {
+  width: 480px;
+  height: 400px;
+}
+header:hover img {
+  transform: rotate(360deg) scale(1) skew(360deg);
+  transition: transform 10s ease-in-out 0.1s;
+}
+/*****************
+ header style end 
+ *****************/
+/*****************
+ main style start 
+ *****************/
+/*****************
+ players div style start
+ *****************/
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.players {
+  display: grid;
+  grid-template-columns: repeat(3, 0.2fr);
+  grid-row-gap: 23px;
+  grid-column-gap: 23px;
+  align-items: center;
+}
+.player-div {
+  box-shadow: 1px 1px 5px;
+  border-radius: 5px;
+  width: 250px;
+  padding: 15px 0px 20px 15px;
+}
+.player {
+  height: 177px;
+  width: 230px;
+}
+.player-div p {
+  color: gray;
+  font-size: 12px;
+}
+/*****************
+ players div style end
+ *****************/
+/*****************
+ bonus section style start
+*****************/
+.bonus {
+  position: relative;
+}
+.bonus > div {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 4%;
+}
+.bonus img {
+  width: 55%;
+  border-radius: 15px;
+}
+.bonus:hover img {
+  opacity: 0.4;
+}
+.article-div {
+  display: none;
+  position: absolute;
+  margin: 0;
+  width: 55%;
+  color: rgb(0, 0, 0);
+}
+.bonus:hover .article-div {
+  display: block;
+}
+/*****************
+ bonus section style end
+ *****************/
+
+/***************** 
+main style end 
+*****************/
+
+/*************** 
+footer style part start
+****************/
+footer {
+  margin-top: 30px;
+}
+.football-pic {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.football-pic img {
+  width: 310px;
+  align-items: center;
+}
+.social-icon-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.social-icon img {
+  width: 25px;
+  padding: 5px 5px 0 5px;
+}
+footer p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer span {
+  align-items: center;
+}
+/***************** 
+footer style part end 
+*****************/
+/*****************
+ media query for mobile
+ start
+ *****************/
+@media only screen and (max-width: 668px) {
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    width: 100%;
+  }
+  /*****************
+  header part style 
+  *****************/
+  header {
+    overflow: hidden;
+    padding-right: 10px;
+  }
+  /***************** 
+  copa america is a header div 
+  *****************/
+  .copa-america {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .copa-america > div {
+    width: auto;
+  }
+  .copa-america .conmebol {
+    width: 350px;
+  }
+  /* conmebol is a header div */
+  .conmebol {
+    margin: 10px;
+    padding: 0;
+  }
+  .head-player-img {
+    overflow: hidden;
+  }
+  .head-player-img img {
+    width: 380px;
+    height: 300px;
+  }
+  /*****************
+  header part style end
+  *****************/
+  /*****************
+  main part style start 
+  *****************/
+  .players {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  /*****************
+  article is a bonus div 
+  *****************/
+  .article-div {
+    height: 100px;
+    font-size: 12px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+  }
+}
+/*****************
+main part style end 
+*****************/
+/*****************
+ media query for mobile
+ end
+ *****************/
+/*****************
+ media query for tablet
+ start
+ *****************/
+@media only screen and (min-width: 688px) and (max-width: 992px) {
+  body {
+    width: 100%;
+  }
+  /*****************
+  header part style 
+  *****************/
+  header {
+    overflow: hidden;
+  }
+  .copa-america {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding-right: 0;
+    margin-right: 0;
+  }
+  .copa-america > div {
+    width: auto;
+  }
+  .conmebol {
+    margin: 10px;
+    padding: 0;
+  }
+  .head-player-img {
+    overflow: hidden;
+  }
+  .head-player-img img {
+    width: 370px;
+    height: 300px;
+  }
+  /*****************
+  header part style end
+  *****************/
+  /*****************
+  main part style start 
+  *****************/
+  .players {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  /*****************
+  article is a bonus div 
+  *****************/
+  .article-div {
+    height: 100px;
+    font-size: 10px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+  }
+}
+/*****************
+main part style end 
+*****************/
+/*****************
+ media query for tablet
+ end
+ *****************/
