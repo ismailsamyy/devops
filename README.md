@@ -1,4 +1,4 @@
-Automated Deployment and Management of a Secure Web Environment
+#Automated Deployment and Management of a Secure Web Environment
 This project demonstrates the automated deployment and management of a secure web environment using Docker, MySQL, phpMyAdmin, Nginx, Git (Bitbucket), Jenkins, and Ansible. The environment is designed to ensure secure, efficient, and scalable web services with automated deployments.
 
 Project Overview
@@ -23,35 +23,3 @@ Docker Compose
 Ansible
 Jenkins (for CI/CD)
 Git
-Installation & Setup
-Clone the Repository:
-
-bash
-Copy code
-git clone <repository-url>
-cd <repository-directory>
-Configure Environment:
-
-Update the .env file with the necessary credentials and settings, such as MySQL root password, phpMyAdmin credentials, and Nginx settings.
-
-Run the Ansible Playbook:
-
-Execute the Ansible playbook to set up the environment:
-
-bash
-Copy code
-ansible-playbook -i hosts setup.yml
-Deploy with Docker Compose:
-
-Start the environment with Docker Compose:
-
-bash
-Copy code
-docker-compose up -d
-Access Services:
-
-MySQL: http://<FQDN or IP>:3306
-phpMyAdmin: http://<FQDN or IP>/phpmyadmin
-Nginx (with HTTPS): https://<FQDN>
-Automated Deployments with Jenkins
-Ensure Jenkins is configured to monitor the Bitbucket repository. Upon code updates, Jenkins will automatically trigger a build and deploy the updated 
