@@ -18,9 +18,4 @@ This project demonstrates the automated deployment and management of a secure we
 - **Jenkins**: A running Jenkins instance with access to your Bitbucket repository.
 - **Ansible**: Ansible installed on the control machine to execute playbooks.
 
-### Installation
 
-1. **Clone the Repository**:
-   ```bash
-   git clone https://github.com/your-username/your-repo.git
-   cd your-repo
