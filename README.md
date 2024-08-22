@@ -1,25 +1,26 @@
-#Automated Deployment and Management of a Secure Web Environment
-This project demonstrates the automated deployment and management of a secure web environment using Docker, MySQL, phpMyAdmin, Nginx, Git (Bitbucket), Jenkins, and Ansible. The environment is designed to ensure secure, efficient, and scalable web services with automated deployments.
+# Automated Deployment and Management of a Secure Web Environment
 
-Project Overview
-This project includes:
+This project demonstrates the automated deployment and management of a secure web environment using Docker, MySQL, phpMyAdmin, Nginx, Git (Bitbucket), Jenkins, and Ansible. The environment is designed to streamline container management, ensure secure access, and automate deployment processes.
 
-Docker & Docker Compose: Installed and configured Docker engine and Docker Compose to streamline the management of multiple containers.
+## Features
 
-MySQL & phpMyAdmin: Built and deployed a MySQL container with custom user credentials and a default database. A phpMyAdmin container was also deployed to allow easy graphical interaction with the MySQL database.
+- **Docker and Docker Compose**: Installed and configured Docker engine and Docker Compose to simplify container management.
+- **MySQL and phpMyAdmin**: Deployed a MySQL container with custom user credentials and a default database, alongside a phpMyAdmin container for easy graphical interaction with the MySQL database.
+- **Secure Nginx Proxy**: Configured an Nginx proxy container to manage incoming traffic, enforcing HTTPS on port 443 and restricting access to the Fully Qualified Domain Name (FQDN).
+- **Automated Deployments**: Uploaded the codebase to a Bitbucket repository and implemented automated deployments via Jenkins, ensuring that code changes are automatically deployed upon upload.
+- **Ansible Playbook**: Developed an Ansible playbook to automate the entire environment setup, including Docker installation and container orchestration.
 
-Nginx: Configured a secure Nginx proxy container to manage incoming traffic. HTTPS is enforced on port 443, and access is restricted to the Fully Qualified Domain Name (FQDN).
+## Getting Started
 
-Bitbucket & Jenkins: Uploaded the codebase to a Bitbucket repository and implemented automated deployments using Jenkins. Code changes are automatically deployed upon upload, ensuring continuous delivery.
+### Prerequisites
 
-Ansible: Developed an Ansible playbook to automate the entire environment setup. This includes Docker installation, container orchestration, and the deployment of services.
+- **Docker**: Ensure Docker and Docker Compose are installed on your system.
+- **Jenkins**: A running Jenkins instance with access to your Bitbucket repository.
+- **Ansible**: Ansible installed on the control machine to execute playbooks.
 
-Getting Started
-Prerequisites
-Ensure that the following are installed on your system:
+### Installation
 
-Docker
-Docker Compose
-Ansible
-Jenkins (for CI/CD)
-Git
+1. **Clone the Repository**:
+   ```bash
+   git clone https://github.com/your-username/your-repo.git
+   cd your-repo
